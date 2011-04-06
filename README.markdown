@@ -1,4 +1,5 @@
-== Comunidad de Estudiantes
+Comunidad de Estudiantes
+========================
 
 NOTA: Tener instalado bundler antes de continuar.
 
