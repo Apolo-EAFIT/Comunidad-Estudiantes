@@ -1,12 +1,48 @@
 GIT
-  remote: git://github.com/bborn/authlogic.git
+  remote: http://github.com/paneq/calendar_date_select.git
+  revision: 8e7ec79435a68665df40b14bd90f47e6ac5e9135
+  branch: rails3test
+  specs:
+    calendar_date_select (1.16.1)
+
+GIT
+  remote: https://abuiles@github.com/abuiles/communityengine.git
+  revision: 763fe5ce1b3e4782212de709c6b3671c199d3e55
+  branch: rails3
+  specs:
+    community_engine (1.9.9)
+      acts_as_commentable (~> 3.0.0)
+      authlogic
+      aws-s3
+      calendar_date_select
+      community_engine
+      configatron
+      dynamic_form
+      friendly_id (= 3.2.1)
+      haml
+      hpricot
+      htmlentities
+      meta_search
+      omniauth (~> 0.2.0.beta3)
+      paperclip (~> 2.3)
+      rack (= 1.2.1)
+      rails (= 3.1.0.beta)
+      rakismet
+      recaptcha
+      ri_cal
+      simplecov
+      sqlite3
+      will_paginate (~> 3.0.pre2)
+
+GIT
+  remote: https://github.com/bborn/authlogic.git
   revision: 03ed66a97174ba63fb2601d0193423f2ac8c55f0
   specs:
     authlogic (2.1.6)
       activesupport
 
 GIT
-  remote: git://github.com/bborn/meta_search.git
+  remote: https://github.com/bborn/meta_search.git
   revision: 803e32bc4d2934bb83b03d6345586c659c057ac5
   branch: rails3.1
   specs:
@@ -17,7 +53,7 @@ GIT
       arel (~> 2.0.6)
 
 GIT
-  remote: git://github.com/bborn/rails.git
+  remote: https://github.com/bborn/rails.git
   revision: 1bedee56314ff1de2d186ca56adbe4059f4b0af3
   specs:
     actionmailer (3.1.0.beta)
@@ -63,54 +99,6 @@ GIT
       thor (~> 0.14.4)
 
 GIT
-  remote: git://github.com/rack/rack.git
-  revision: ee1285f959eb77e450997676aee5026280d81bde
-  specs:
-    rack (1.2.1)
-
-GIT
-  remote: git://github.com/rails/arel.git
-  revision: e8563a6234b4f60f8d756d89b3b35026a467694e
-  specs:
-    arel (2.0.7.beta.20110228092631)
-
-GIT
-  remote: http://github.com/paneq/calendar_date_select.git
-  revision: 8e7ec79435a68665df40b14bd90f47e6ac5e9135
-  branch: rails3test
-  specs:
-    calendar_date_select (1.16.1)
-
-GIT
-  remote: https://abuiles@github.com/abuiles/communityengine.git
-  revision: 763fe5ce1b3e4782212de709c6b3671c199d3e55
-  branch: rails3
-  specs:
-    community_engine (1.9.9)
-      acts_as_commentable (~> 3.0.0)
-      authlogic
-      aws-s3
-      calendar_date_select
-      community_engine
-      configatron
-      dynamic_form
-      friendly_id (= 3.2.1)
-      haml
-      hpricot
-      htmlentities
-      meta_search
-      omniauth (~> 0.2.0.beta3)
-      paperclip (~> 2.3)
-      rack (= 1.2.1)
-      rails (= 3.1.0.beta)
-      rakismet
-      recaptcha
-      ri_cal
-      simplecov
-      sqlite3
-      will_paginate (~> 3.0.pre2)
-
-GIT
   remote: https://github.com/intridea/omniauth.git
   revision: 501f3f5cbdbb275fb27b4295d1ee48333153791e
   specs:
@@ -148,6 +136,18 @@ GIT
       oa-more (= 0.2.1)
       oa-oauth (= 0.2.1)
       oa-openid (= 0.2.1)
+
+GIT
+  remote: https://github.com/rack/rack.git
+  revision: ee1285f959eb77e450997676aee5026280d81bde
+  specs:
+    rack (1.2.1)
+
+GIT
+  remote: https://github.com/rails/arel.git
+  revision: e8563a6234b4f60f8d756d89b3b35026a467694e
+  specs:
+    arel (2.0.7.beta.20110228092631)
 
 GEM
   remote: http://rubygems.org/
