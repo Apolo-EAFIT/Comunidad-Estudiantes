@@ -90,7 +90,7 @@ img.polaroid {
 /* 2. HEADER                                       */
 /* =============================================== */
 
-#hd{border-top: 4px solid #780000;}
+#hd{border-top: 4px solid #3300ff;}
 
 #hd h1{float: left;}
 
@@ -117,7 +117,7 @@ float: right;
 padding-left: 20px;
 margin-right: 20px;
 background-color: transparent;
-background-image: url(/community_engine/images/icons/email_open.png);
+background-image: url(/plugin_assets/community_engine/images/icons/email_open.png);
 background-repeat: no-repeat;
 background-position: left center;
 }
@@ -125,7 +125,7 @@ background-position: left center;
 /* Navbar */
 
 #NavBar{
-background: #aba8a3 url(/community_engine/images/bg_navbar.gif) repeat-x 0 0;
+background: #aba8a3 url(/plugin_assets/community_engine/images/bg_navbar.gif) repeat-x 0 0;
 border-top: 1px solid #d9d6d3;
 clear: both;
 }
@@ -158,7 +158,7 @@ text-decoration: none !important;
 font-size: 108%;
 padding: 4px 15px 4px 5px;
 margin: 11px 10px 0 0;
-background: #fff url(/community_engine/images/search.gif) no-repeat right center;
+background: #fff url(/plugin_assets/community_engine/images/search.gif) no-repeat right center;
 border: none;
 }
 
@@ -186,12 +186,12 @@ margin-bottom:.5em;
 font-size: 108%;}
 
 #welcome .box h4{
-background:url(/community_engine/images/bg_h6btn.gif) repeat-x left center;
+background:url(/plugin_assets/community_engine/images/bg_h6btn.gif) repeat-x left center;
 }
 
 #welcome .box h4 a{
 background-color: transparent;
-background-image: url(/community_engine/images/icons/52.png);
+background-image: url(/plugin_assets/community_engine/images/icons/52.png);
 background-repeat: no-repeat;
 background-position: .5em center;
 display: block;
@@ -205,7 +205,7 @@ border: 1px solid #9ec500;
 }
 
 #welcome .first .box h4 a{
-background-image: url(/community_engine/images/icons/31.png);
+background-image: url(/plugin_assets/community_engine/images/icons/31.png);
 }
 
 #welcome .box h4 a:hover{
@@ -348,21 +348,22 @@ font-weight: bold;
 padding:0 0 3px 0;
 }
 
-.hentry .vcard ul li.update{background-image: url(/community_engine/images/icons/date.png) }
-.hentry .vcard ul li.view{background-image: url(/community_engine/images/icons/page_white_magnify.png) }
-.hentry .vcard ul li.comments{background-image: url(/community_engine/images/icons/comments.png) }
-.hentry .vcard ul li.msg{background-image: url(/community_engine/images/icons/email_go.png) }
-.hentry .vcard ul li.addfriend{background-image: url(/community_engine/images/icons/user_add.png) }
-.hentry .vcard ul li.print{background-image: url(/community_engine/images/icons/printer.png) }
-.hentry .vcard ul li.email{background-image: url(/community_engine/images/icons/user_go.png) }
+.hentry .vcard ul li.update{background-image: url(/plugin_assets/community_engine/images/icons/date.png) }
+.hentry .vcard ul li.view{background-image: url(/plugin_assets/community_engine/images/icons/page_white_magnify.png) }
+.hentry .vcard ul li.comments{background-image: url(/plugin_assets/community_engine/images/icons/comments.png) }
+.hentry .vcard ul li.msg{background-image: url(/plugin_assets/community_engine/images/icons/email_go.png) }
+.hentry .vcard ul li.addfriend{background-image: url(/plugin_assets/community_engine/images/icons/user_add.png) }
+.hentry .vcard ul li.print{background-image: url(/plugin_assets/community_engine/images/icons/printer.png) }
+.hentry .vcard ul li.email{background-image: url(/plugin_assets/community_engine/images/icons/user_go.png) }
 .hentry .vcard ul li.share{
-/*	background-image: url(/community_engine/images/icons/group_go.png) */
+/*	background-image: url(/plugin_assets/community_engine/images/icons/group_go.png) */
 	padding-left:0;
 	}
-.hentry .vcard ul li.tags{background-image: url(/community_engine/images/icons/tag_blue.png) }
-.hentry .vcard ul li.geo{background-image: url(/community_engine/images/icons/world.png) }
-.hentry .vcard ul li.edit{background-image: url(/community_engine/images/icons/post.png) }
-.hentry .vcard ul li.delete{background-image: url(/community_engine/images/icons/delete.png) }
+.hentry .vcard ul li.tags{background-image: url(/plugin_assets/community_engine/images/icons/tag_blue.png) }
+.hentry .vcard ul li.skills{background-image: url(/plugin_assets/community_engine/images/icons/wrench.png) }
+.hentry .vcard ul li.geo{background-image: url(/plugin_assets/community_engine/images/icons/world.png) }
+.hentry .vcard ul li.edit{background-image: url(/plugin_assets/community_engine/images/icons/post.png) }
+.hentry .vcard ul li.delete{background-image: url(/plugin_assets/community_engine/images/icons/delete.png) }
 
 .entry-content h6{
 border-bottom: 1px dotted #a2a19b;
@@ -376,7 +377,7 @@ font-size: 85%;
 font-weight: bold;
 text-transform: uppercase;
 text-decoration: none;
-background: transparent url(/community_engine/images/icons/add.png) no-repeat left center;
+background: transparent url(/plugin_assets/community_engine/images/icons/add.png) no-repeat left center;
 padding-left: 20px;
 padding: 2px 2px 2px 20px;
 }
@@ -404,7 +405,7 @@ background: red;
 display: block;
 margin: 0 10px 5px 0;
 padding: 2px 0 2px 15px;
-background: url(/community_engine/images/icons/tag_blue.png) no-repeat left center;
+background: url(/plugin_assets/community_engine/images/icons/tag_blue.png) no-repeat left center;
 }
 
 
@@ -425,13 +426,13 @@ border-bottom: 1px dotted #a2a19b;
 .checks li, .page li{
 padding-left: 20px;
 background-color: transparent;
-background-image: url(/community_engine/images/icons/accept.png);
+background-image: url(/plugin_assets/community_engine/images/icons/accept.png);
 background-repeat: no-repeat;
 background-position: left center;
 }
 
-.checks li{background-image: url(/community_engine/images/icons/accept.png)}
-.page li{background-image:url(/community_engine/images/icons/page_white.png)}
+.checks li{background-image: url(/plugin_assets/community_engine/images/icons/accept.png)}
+.page li{background-image:url(/plugin_assets/community_engine/images/icons/page_white.png)}
 
 /* user list */
 dl.vcard{
@@ -470,9 +471,9 @@ background-repeat: no-repeat;
 background-color: transparent;
 }
 
-dl.vcard dd.member{background-image: url(/community_engine/images/icons/user.png);}
-dl.vcard dd.post{background-image: url(/community_engine/images/icons/page_white.png);}
-dl.vcard dd.rss{background-image: url(/community_engine/images/icons/rss.png);}
+dl.vcard dd.member{background-image: url(/plugin_assets/community_engine/images/icons/user.png);}
+dl.vcard dd.post{background-image: url(/plugin_assets/community_engine/images/icons/page_white.png);}
+dl.vcard dd.rss{background-image: url(/plugin_assets/community_engine/images/icons/rss.png);}
 
 h6.all{margin:.5em 0;}
 
@@ -480,7 +481,7 @@ h6.all a{
 font-size: 85%;
 font-weight: bold;
 text-transform: uppercase;
-background: transparent url(/community_engine/images/icons/add.png) no-repeat left center;
+background: transparent url(/plugin_assets/community_engine/images/icons/add.png) no-repeat left center;
 padding:3px 0 3px 20px;
 color: #379d00;
 }
@@ -631,19 +632,19 @@ margin-left:  12.3846em; /* about 200px - 3em*/
 
 .fresh dt {
 	padding-left: 20px;
-	background-image: url(/community_engine/images/icons/activity_default.png);
+	background-image: url(/plugin_assets/community_engine/images/icons/activity_default.png);
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-color: transparent;	
 }
 
-.fresh .comment dt {background-image: url(/community_engine/images/icons/comment.png);}
-.fresh .photo dt {background-image: url(/community_engine/images/icons/picture.png);}
-.fresh .clipping dt {background-image: url(/community_engine/images/icons/book.png);}
-.fresh .updated_profile dt {background-image: url(/community_engine/images/icons/user_edit.png);}
-.fresh .favorite dt {background-image: url(/community_engine/images/icons/heart_add.png);}
-.fresh .post dt, .fresh .sb_post dt, .fresh .topic dt{background-image: url(/community_engine/images/icons/post.png);}
-.fresh .rsvp dt, .fresh .event dt {background-image: url(/community_engine/images/icons/date.png);}
+.fresh .comment dt {background-image: url(/plugin_assets/community_engine/images/icons/comment.png);}
+.fresh .photo dt {background-image: url(/plugin_assets/community_engine/images/icons/picture.png);}
+.fresh .clipping dt {background-image: url(/plugin_assets/community_engine/images/icons/book.png);}
+.fresh .updated_profile dt {background-image: url(/plugin_assets/community_engine/images/icons/user_edit.png);}
+.fresh .favorite dt {background-image: url(/plugin_assets/community_engine/images/icons/heart_add.png);}
+.fresh .post dt, .fresh .sb_post dt, .fresh .topic dt{background-image: url(/plugin_assets/community_engine/images/icons/post.png);}
+.fresh .rsvp dt, .fresh .event dt {background-image: url(/plugin_assets/community_engine/images/icons/date.png);}
 
 /* =============================================== */
 /* 8. COMMUNITY FOOTER                             */
@@ -677,7 +678,7 @@ padding-left: 0;
 #CommunityFooter p{
 float: right;
 padding: 2px 0 2px 120px;
-background: url(/community_engine/images/logo.gif) no-repeat left center;
+background: url(/plugin_assets/community_engine/images/logo.gif) no-repeat left center;
 }
 
 /* =============================================== */
@@ -717,6 +718,33 @@ ul.sortable_hover {
 	border:1px dashed #328E01;
 	background:#efefef;
 	}
+
+ul#skills {
+	width:250px;
+	height:200px;
+	overflow:auto;
+	}
+	ul#skills li {
+		background:#ffffff;
+		margin:.5em;
+		padding:.5em;
+		border:1px solid #cccccc;
+		}
+
+ul#users_skills {
+	width:250px;
+	background:#eee;
+	overflow:hidden;	
+	}		
+	ul#users_skills li {
+		background:#ffffff;
+		margin:.5em;
+		padding:.5em;
+		border:1px solid #cccccc;
+		}	
+.handle {
+	cursor:move;
+}
 
 
 /*	PAGINATION	*/
@@ -824,7 +852,83 @@ div.user_list div.vcard {
 			text-decoration:none;}
 
 
-/* MCE Editor */
+/*SWF UPLOAD*/
+.progressWrapper {
+	width: 357px;
+	overflow: hidden;
+}
+.progressContainer {
+	margin: 5px;
+	padding: 4px;
+	border: solid 1px #E8E8E8;
+	background-color: #F7F7F7;
+	overflow: hidden;
+}
+.progressContainer .red {
+	border: solid 1px #B50000;
+	background-color: #FFEBEB;
+}
+.progressContainer .green {
+	border: solid 1px #DDF0DD;
+	background-color: #EBFFEB;
+}
+.progressContainer .blue {
+	border: solid 1px #CEE2F2;
+	background-color: #F0F5FF;
+}
+.progressName {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #555555;	
+	width: 323px;
+	height: 14px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.progressBarInProgress,
+.progressBarComplete,
+.progressBarError {
+	font-size: 0px;
+	width: 0%;
+	height: 2px;
+	background-color: blue;
+	margin-top: 2px;
+}
+.progressBarComplete {
+	width: 100%;
+	background-color: green;
+	visibility: hidden;
+}
+.progressBarError {
+	width: 100%;
+	background-color: red;
+	visibility: hidden;
+}
+.progressBarStatus {
+	margin-top: 2px;
+	width: 337px;
+	font-size: 7pt;
+	font-family: Verdana;
+	text-align: left;
+	white-space: nowrap;
+}
+div.uploadStatus {
+  margin: 5px;
+}
+div.progressBar {
+  margin: 5px;
+}
+div.progressBar div.border {
+  background-color: #fff;
+  border: 1px solid gray;
+  width: 100%;
+}
+div.progressBar div.background {
+  background-color: #333;
+  height: 18px;
+  width: 0%;
+}
 
 .mceEditor .left {
 	float:none;
@@ -864,10 +968,10 @@ ul.message_nav li {
 	background-repeat: no-repeat;
 	padding-left:20px;
 }
-ul.message_nav li.inbox_new {background-image: url(/community_engine/images/icons/email_open.png);}
-ul.message_nav li.inbox {background-image: url(/community_engine/images/icons/email.png);}
-ul.message_nav li.sent {background-image: url(/community_engine/images/icons/email_go.png);}
-li.compose {background-image: url(/community_engine/images/icons/email_edit.png);}
+ul.message_nav li.inbox_new {background-image: url(/plugin_assets/community_engine/images/icons/email_open.png);}
+ul.message_nav li.inbox {background-image: url(/plugin_assets/community_engine/images/icons/email.png);}
+ul.message_nav li.sent {background-image: url(/plugin_assets/community_engine/images/icons/email_go.png);}
+li.compose {background-image: url(/plugin_assets/community_engine/images/icons/email_edit.png);}
 .messages .photo a img{
 	float: left;
 	display: block;
@@ -888,9 +992,6 @@ table.messages tbody td {
 	font-size: 85%;
 	text-align: right;
 	}
-.messages tr.unread td {
-  font-weight: bold;
-}
 pre.message_body {
 	padding: 10px;
 	border: 1px solid #ccc;
@@ -902,8 +1003,6 @@ pre.message_body {
 	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 	
-	
-/* Polls  */
 
 table.poll {
   width: 100%;
@@ -913,7 +1012,7 @@ table.poll {
     table.poll td .vote {
       display: block;
       float: left;
-      background: url(/community_engine/images/icons/vote.png) no-repeat left;
+      background: url(/plugin_assets/community_engine/images/icons/vote.png) no-repeat left;
       padding: 0 10px 0 20px;
       height: 20px;
       margin-right: 10px;
@@ -936,28 +1035,12 @@ table.poll {
       padding-right: 2px; }
 
 /* User Menu Dropdown*/
-#user-menu-tip {
-  background: #fff;
-  font-size: 12px;
-  position: absolute;
-  right: 0;
-  top: -9999px;
-	*width:150px;
-	border: 2px solid #2a1301; 
-	border-top: none;	
-  padding: 10px;
-  z-index: 999;  
-}
 #user-menu {
 	padding-right: 15px;
-	position: relative;
-	background: url(/community_engine/images/icons/bullet_arrow_down_50.png) no-repeat right;
+	background: url(/plugin_assets/community_engine/images/icons/bullet_arrow_down_50.png) no-repeat right;
 	}
 #user-menu:hover {
-	background: url(/community_engine/images/icons/bullet_arrow_down.png) no-repeat right;	
-} 
-#user-menu:hover #user-menu-tip {
-  top: 22px;
+	background: url(/plugin_assets/community_engine/images/icons/bullet_arrow_down.png) no-repeat right;	
 }
 
 .icon_row a {
@@ -967,11 +1050,3 @@ table.poll {
    border:0;
    vertical-align:middle;
 }
-
-/* Omniauth */
-
-.omniauth_remove {
-  position: relative;
-  margin-left: -15px; 
-}
-
