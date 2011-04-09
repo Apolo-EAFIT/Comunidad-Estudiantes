@@ -1,0 +1,178 @@
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %title
+      Comunidad de Estudiantes
+      de Ingenieria de Sistemas
+    = javascript_include_tag "prototype.js", "jquery.min.js", "jquery.tools.min.js", "jquery.ui.min.js", "jquery.prettyPhoto.js", :cache => true
+    = stylesheet_link_tag "event_calendar", "prettyPhoto", "eafit","curriculovivo.css", "theme/slide_show.css", 'forum', :cache => true
+    = javascript_include_tag "application"
+    = javascript_include_tag "forum.js","effects.js","lightbox.js" , :plugin => "community_engine", :cache => "comengine"
+    = javascript_include_tag "flowplayer-3.1.4.min"
+    -# = javascript_include_tag "admin" if current_user and current_user.admin?
+    = javascript_include_tiny_mce_if_used
+    -# = tiny_mce if using_tiny_mce?
+    -# = javascript_include_tag "AC_RunActiveContent", :plugin => "community_engine" if current_page?(:controller => 'photos', :action => 'new') or current_page?(:controller => 'statistics', :action => 'index')
+    = yield(:head)
+    -# - unless current_user
+    -#   - unless current_page?(login_path)
+    -#     %noscript
+    -#       %meta{:content => "2;url=#{login_url}", "http-equiv" => "refresh"}
+    /[if gte IE 5]
+      <haml:loud> stylesheet_link_tag 'ie' </haml:loud>
+    /[if lte IE 7]
+      <haml:loud> stylesheet_link_tag 'ie67' </haml:loud>
+    /[if (gte IE 6)&(lte IE 8)]
+      <haml:loud> javascript_include_tag 'selectivizr' </haml:loud>
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-20097505-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+  %body
+    #out-container
+      / HEADER EAFIT
+      #header_bg{:style => "background-color: #004B85; border-bottom: 3px solid #004B85;"}
+        #menu-subportales-bg
+          #menu-subportales
+            %ul.botones-subportales
+              %li
+                %a{:href => "http://www.eafit.edu.co/investigacion"} Investigación
+              %li.linea-botones-subportales |
+              %li
+                %a{:href => "http://www.eafit.edu.co/cice"} Cice
+              %li.linea-botones-subportales |
+              %li
+                %a{:href => "http://www.eafit.edu.co/cec"} Educación Continua
+              %li.linea-botones-subportales |
+              %li
+                %a{:href => "http://www.eafit.edu.co/idiomas"} Idiomas
+              %li.linea-botones-subportales |
+              %li
+                %a{:href => "http://www.eafit.edu.co/cultura"} Cultura
+              %li.linea-botones-subportales |
+              %li
+                %a{:href => "http://www.eafit.edu.co/biblioteca"} Biblioteca
+              %li.linea-botones-subportales |
+              %li
+                %a{:href => "http://www.eafit.edu.co/international"} International
+        #header
+          #logo
+          #search
+            - form_for :search, :url =>{ :controller => :search, :action => :simple}, :method => :get do |f|
+              %table
+                %tr
+                  %td= text_field_tag :search, params[:search]
+                  %td= f.submit "Buscar", :name => nil
+      / FIN HEADER EAFIT
+      .clear
+        %noscript
+          .no-javascript-alert
+            %p.big Este sitio requiere tener Javascript activado. Activalo y vuelve a ingresar
+            %p
+              Si no sabes como activarlo, haz clic #{link_to "aqui","#"}
+      #bannertop-bg
+        .divbanner-top
+          = link_to "INICIO", '#'#root_path
+          = link_to "Acerca de", "#"
+          = link_to "Directorio de Materias", '3'#list_subjects_path
+          = link_to "Banco de recursos", "#"
+          = link_to "Tips", "#"
+      / end of bannertop-bg
+      .clear
+        #content
+        / NAVIGATION
+        = render "shared/sidebar"
+        #center
+          #flash-messages
+            - unless flash[:notice].nil?
+              .notice.alert
+                = flash[:notice]
+                %a.close_alert{:href => "#"} cerrar
+            - unless flash[:warning].nil?
+              .warning.alert
+                = flash[:warning]
+                %a.close_alert{:href => "#"} cerrar
+            - unless flash[:error].nil?
+              .error.alert
+                = flash[:error]
+                %a.close_alert{:href => "#"} cerrar
+          / end of flash-messages
+          .yui-b.sidebar
+            = render :partial => 'shared/admin_nav'
+          = yield
+        / End of center div
+        .clear
+      / End of content div
+      .clear       / FOOTER EAFIT
+      #footer_bg
+        #footer
+          #info-contacto
+            %span.amarillo Universidad EAFIT
+            %br/
+            Línea de atención al usuario
+            %br/
+            Medellín: (57) (4) - 448 95 00
+            %br/
+            Resto del país: 01 8000 515 900
+            %br/
+            Conmutador: (57) (4) - 2619500
+            %br/
+            Correo: admisiones.registro@eafit.edu.co
+            %br/
+            Dirección: Carrera 49 N° 7 Sur - 50
+            %br/
+            Medellín - Colombia - Suramérica
+            %br/
+            Copyright 2010 ®
+            %br/
+            Todos los Derechos Reservados
+          /
+            <div class="lista-footer">
+            <ul class="botones-footer">
+            <li class="amarillo">Alianzas</li>
+            <li><a href="http://www.colombiaaprende.edu.co" target="_blank">Colombia Aprende</a></li>
+            <li><a href="http://www.colombiaespasion.com" target="_blank">Colombia es Pasion</a></li>
+            <li><a href="http://www.medellincomovamos.org" target="_blank">Medelli>n co>mo vamos</a></li>
+            <li><a href="http://www.faae.org.co" target="_blank">FAAE</a></li>
+            <li><a href="http://www.birdantioquia.org.co" target="_blank">Bird Antioquia</a></li>
+            <li><a href="http://www.universia.net.co" target="_blank">Universia</a></li>
+            <li><a href="http://www.ruana.edu.co" target="_blank">Ruana</a></li>
+            <li><a href="http://www.renata.edu.co" target="_blank">Renata</a></li>
+            <li><a href="http://www.cis.org.co" target="_blank">Cis</a></li>
+
+            </ul>
+            </div>
+          .lista-footers
+            %li.amarillo Servicios Web
+            .lista-footer
+              %ul.botones-footer
+                %li
+                  %a{:href => "http://blogs.eafit.edu.co", :target => "_blank"} Blogs EAFIT
+                %li
+                  %a{:href => "http://www.eafit.edu.co/servicios-en-linea/eafit-virtual/Paginas/inicio.aspx", :target => "_blank"} EAFIT virtual
+                %li
+                  %a{:href => "http://www.eafit.edu.co/servicios-en-linea/aplicaciones-web/Paginas/aplicaciones-web.aspx", :target => "_blank"} Aplicaciones Web
+                %li
+                  %a{:href => "http://portus.eafit.edu.co", :target => "_blank"} Correo Web
+                %li
+                  %a{:href => "http://www.eafit.edu.co/ulises", :target => "_blank"} Ulises
+            .lista-footer
+              %ul.botones-footer
+                %li
+                  %a{:href => "http://interactiva.eafit.edu.co", :target => "_blank"} EAFIT Interactiva
+                %li
+                  %a{:href => "http://entrenos.eafit.edu.co", :target => "_blank"} Intranet Entrenos
+                %li
+                  %a{:href => "http://www.eafit.edu.co/agencia-noticias", :target => "_blank"} Agencia de Noticias
+                %li
+                  %a{:href => "http://envivo.eafit.edu.co", :target => "_blank"} Canal Envivo
+                %li
+                  %a{:href => "http://acustica.eafit.edu.co", :target => "_blank"} Emisora Acustica
+        #linea-footer
