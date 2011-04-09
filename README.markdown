@@ -6,7 +6,7 @@ NOTA: Tener instalado bundler antes de continuar.
       $ gem install bundler
 
 Una vez instalado bundler pueden correr los siguientes comandos y la
-aplicación debería iniciarse en http://localhost:3000
+Testaplicación debería iniciarse en http://localhost:3000
 
            $ bundle install --binstubs
            $ bin/rake community_engine:install
