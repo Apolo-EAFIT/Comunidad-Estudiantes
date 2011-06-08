@@ -492,5 +492,4 @@ class User < ActiveRecord::Base
     def omniauthed?
       authorizing_from_omniauth || authorizations.any?
     end
-
 end
