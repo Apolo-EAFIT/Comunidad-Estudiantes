@@ -3,7 +3,7 @@ class CreateSubjects < ActiveRecord::Migration
     create_table :subjects do |t|
       t.string :code
       t.string :name
-      t.integer :credits
+      t.integer :credits, :default => 0 
 
       t.timestamps
     end
