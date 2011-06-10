@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110406035810) do
+ActiveRecord::Schema.define(:version => 20110610221845) do
 
   create_table "activities", :force => true do |t|
     t.integer  "user_id",    :limit => 10
@@ -357,6 +357,21 @@ ActiveRecord::Schema.define(:version => 20110406035810) do
     t.string "name"
   end
 
+  create_table "subjects", :force => true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.integer  "credits"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "subjects_teachers", :id => false, :force => true do |t|
+    t.integer  "subject_id"
+    t.integer  "teacher_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "taggings", :force => true do |t|
     t.integer "tag_id"
     t.integer "taggable_id"
@@ -374,6 +389,13 @@ ActiveRecord::Schema.define(:version => 20110406035810) do
   end
 
   add_index "tags", ["name"], :name => "index_tags_on_name"
+
+  create_table "teachers", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "topics", :force => true do |t|
     t.integer  "forum_id"
