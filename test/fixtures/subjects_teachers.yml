@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  subject_id: 1
+  teacher_id: 1
+
+two:
+  subject_id: 1
+  teacher_id: 1
