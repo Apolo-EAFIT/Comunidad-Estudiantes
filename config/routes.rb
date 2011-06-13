@@ -1,4 +1,12 @@
 Comunidad::Application.routes.draw do
+  get "subjects/index"
+
+  get "subjects/new"
+
+  get "subjects/show"
+
+  resources :subjecs
+  
   mount CommunityEngine::Engine => "/"
   # The priority is based upon order of creation:
   # first created -> highest priority.
