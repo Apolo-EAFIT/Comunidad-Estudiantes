@@ -1,0 +1,24 @@
+<h1>Subjects</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <th>Code</th>
+      <th>Name</th>
+      <th>Credits</th>
+      <th></th>
+    </tr>
+  </tbody>
+  <% @subjects.each do |s|%>
+  <tr>
+    <th><%=s.code %></th>
+    <th><%=s.name %></th>
+    <th><%=s.credits %></th>
+    <th><%=link_to 'View' , s %></th>
+  </tr>
+  <% end %>
+</table>
+
+<% if current_user.admin? %>
+<%= link_to 'New' , new_subject_path %>
+<%end%>
