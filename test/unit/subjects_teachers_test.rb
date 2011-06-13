@@ -3,7 +3,6 @@ require 'test_helper'
 class SubjectsTeachersTest < ActiveSupport::TestCase
   
   test "subject can be added many teachers" do
-    ActiveRecord::Base.logger = Logger.new(STDOUT)
     subject = Subject.create(:code => "MyCodeWithTeachers", :name => "MySubject")
     teacher1 = Teacher.create(:first_name => "Juan", :last_name => "Gonzalez")
     teacher2 = Teacher.create(:first_name => "Pedro", :last_name => "Arboleda")
