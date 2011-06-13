@@ -1,2 +1,28 @@
-<h1>Subjects#index</h1>
-<p>Find me in app/views/subjects/index.html.erb</p>
+<h1>Subjects</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <th>Code</th>
+      <th>Name</th>
+      <th>Credits</th>
+      <% if current_user.admin? %>
+      <th></th>
+      <% end %>
+    </tr>
+  </tbody>
+  <% @subjects.each do |s|%>
+  <tr>
+    <th><%=s.code %></th>
+    <th><%=s.name %></th>
+    <th><%=s.credits %></th>
+    <% if current_user.admin? %>
+    <th><%=link_to 'View' , s %></th>
+    <% end %>
+  </tr>
+  <% end %>
+</table>
+
+<% if current_user.admin? %>
+<%= link_to 'New' , new_subject_path %>
+<%end%>
