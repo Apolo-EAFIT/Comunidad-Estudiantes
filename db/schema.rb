@@ -360,7 +360,7 @@ ActiveRecord::Schema.define(:version => 20110610221845) do
   create_table "subjects", :force => true do |t|
     t.string   "code"
     t.string   "name"
-    t.integer  "credits"
+    t.integer  "credits",    :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
