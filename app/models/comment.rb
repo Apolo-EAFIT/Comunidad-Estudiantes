@@ -24,6 +24,8 @@ class Comment < ActiveRecord::Base
         commentable.title
       when 'clipping'
         commentable.description || "Clipping from #{commentable.user.login}"
+      when 'subject'
+        "#{commentable.code} - #{commentable.name}"
       else
         commentable.class.to_s.humanize
     end
