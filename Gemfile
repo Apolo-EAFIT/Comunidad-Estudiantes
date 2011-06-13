@@ -6,6 +6,7 @@ gem 'community_engine', '2.0.0.beta', :git => 'https://github.com/bborn/communit
 gem 'rails', '3.1.0.beta1'
 gem 'arel', '~> 2.1.0'
 gem "rack", '1.3.0.beta'
+gem 'sass'
 
 # Temporary edge sources for other libraries
 gem 'authlogic', :git => 'https://github.com/bborn/authlogic.git'

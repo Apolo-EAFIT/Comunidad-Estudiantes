@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110610221845) do
+ActiveRecord::Schema.define(:version => 20110613122707) do
 
   create_table "activities", :force => true do |t|
     t.integer  "user_id",    :limit => 10
@@ -176,6 +176,15 @@ ActiveRecord::Schema.define(:version => 20110610221845) do
   add_index "friendships", ["friendship_status_id"], :name => "index_friendships_on_friendship_status_id"
   add_index "friendships", ["user_id"], :name => "index_friendships_on_user_id"
 
+  create_table "grades", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "gradable_id"
+    t.string   "gradable_type"
+    t.integer  "score"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "homepage_features", :force => true do |t|
     t.datetime "created_at"
     t.string   "url"
@@ -303,6 +312,24 @@ ActiveRecord::Schema.define(:version => 20110610221845) do
   add_index "posts", ["published_at"], :name => "index_posts_on_published_at"
   add_index "posts", ["user_id"], :name => "index_posts_on_user_id"
 
+  create_table "rates", :force => true do |t|
+    t.integer "score"
+  end
+
+  create_table "ratings", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "rate_id"
+    t.integer  "rateable_id"
+    t.string   "rateable_type", :limit => 32
+    t.text     "free_text"
+    t.string   "rater_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "ratings", ["rate_id"], :name => "index_ratings_on_rate_id"
+  add_index "ratings", ["rateable_id", "rateable_type"], :name => "index_ratings_on_rateable_id_and_rateable_type"
+
   create_table "roles", :force => true do |t|
     t.string "name"
   end
@@ -360,7 +387,7 @@ ActiveRecord::Schema.define(:version => 20110610221845) do
   create_table "subjects", :force => true do |t|
     t.string   "code"
     t.string   "name"
-    t.integer  "credits"
+    t.integer  "credits",    :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end

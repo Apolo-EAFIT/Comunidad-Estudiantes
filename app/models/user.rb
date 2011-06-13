@@ -20,6 +20,7 @@ class User < ActiveRecord::Base
     c.validates_format_of_email_field_options = { :with => /^([^@\s]+)@((?:[-a-z0-9A-Z]+\.)+[a-zA-Z]{2,})$/, :if => :email_required? }
   end
 
+  has_many :grades, :as => :gradable
   acts_as_taggable
   acts_as_commentable
   has_enumerated :role
@@ -48,6 +49,7 @@ class User < ActiveRecord::Base
     has_many :invitations, :dependent => :destroy
     has_many :rsvps, :dependent => :destroy
     has_many :albums
+    has_many :grades
 
     #friendship associations
     has_many :friendships, :class_name => "Friendship", :foreign_key => "user_id", :dependent => :destroy
