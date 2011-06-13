@@ -6,9 +6,7 @@
       <th>Code</th>
       <th>Name</th>
       <th>Credits</th>
-      <% if current_user.admin? %>
       <th></th>
-      <% end %>
     </tr>
   </tbody>
   <% @subjects.each do |s|%>
@@ -16,9 +14,7 @@
     <th><%=s.code %></th>
     <th><%=s.name %></th>
     <th><%=s.credits %></th>
-    <% if current_user.admin? %>
     <th><%=link_to 'View' , s %></th>
-    <% end %>
   </tr>
   <% end %>
 </table>
