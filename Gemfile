@@ -7,7 +7,7 @@ gem 'rails', '3.1.0.beta1'
 gem 'arel', '~> 2.1.0'
 gem "rack", '1.3.0.beta'
 gem "sass"
-
+gem "rspec-rails"
 # Temporary edge sources for other libraries
 gem 'authlogic', :git => 'https://github.com/bborn/authlogic.git'
 gem 'calendar_date_select', :git => 'https://github.com/paneq/calendar_date_select.git', :branch => 'rails3test'
